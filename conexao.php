@@ -1,6 +1,6 @@
 <?php
 
-$host = "144.22.157.228";
+$host = "www.thyagoquintas.com.br";
 $db = "Alpha";
 $charset = "utf8mb4";
 $user = "alpha";
