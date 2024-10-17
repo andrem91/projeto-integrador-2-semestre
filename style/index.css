@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+/* Estilo para a mensagem de erro */
+.error-message {
+    color: #fff;
+    background-color: #e74c3c;
+    border: 1px solid #c0392b;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+}
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: black;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+/* Estilo básico para o formulário */
+form {
+    max-width: 400px;
+    margin: 80px auto;
+    padding: 20px;
+    border-radius: 30px;
+    background-color: white;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 90%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-control {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn {
+    background-color: #34c9ff;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 300px;
+    text-align: center;
+
+}
+
+.btn:hover {
+    background-color: #0056b3;
+    color: white;
+}
+
+.btn-container {
+    margin-bottom: 20px;
+}
+
+#img-logo {
+    width: 500px;
+    margin-top: 20px;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

@@ -34,13 +34,16 @@ if (isset($_SESSION['mensagem_erro'])) {
         <div class="btn-section">
             
                 <div class = "btn-container center">
-                    <a class="btn" href="crud_admin.php">Administrador</a>
+                    <a class="btn" href="cadastrar_administrador.php">Cadastrar Administrador</a>
                 </div>
                 <div class = "btn-container center">
-                    <a class="btn" href="cadastrar_produto.php">Cadastrar Produto</a>
+                    <a class="btn" href="">Editar Administrador</a>
                 </div>
                 <div class = "btn-container center">
-                    <a class="btn" href="listar_produtos.php">Listar Produtos</a>
+                    <a class="btn" href="">Listar Administrador</a>
+                </div>
+                <div class = "btn-container center">
+                    <a class="btn" href="">Deletar Administrador</a>
                 </div>
            
         </div>
