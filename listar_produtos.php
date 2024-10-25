@@ -30,67 +30,8 @@ try {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lista de Produtos</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f9f9f9;
-            margin: 0;
-            padding: 20px;
-        }
-        
-        h2 {
-            color: #333;
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 20px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-
-        th, td {
-            padding: 12px;
-            text-align: left;
-            border: 1px solid #ddd;
-        }
-
-        th {
-            background-color: #4CAF50;
-            color: white;
-        }
-
-        tr:nth-child(even) {
-            background-color: #f2f2f2;
-        }
-
-        .action-btn {
-            display: inline-block;
-            padding: 6px 12px;
-            margin: 2px;
-            text-decoration: none;
-            border-radius: 4px;
-            color: white;
-        }
-
-        .action-btn {
-            background-color: #007BFF;
-        }
-
-        .delete-btn {
-            background-color: #FF4136;
-        }
-
-        .action-btn:hover, .delete-btn:hover {
-            opacity: 0.9;
-        }
-
-        .error {
-            color: red;
-            font-weight: bold;
-        }
-    </style>
 </head>
+<link rel="stylesheet" href="style/index.css">
 
 <body>
     <h2>Produtos Cadastrados</h2>
@@ -120,13 +61,17 @@ try {
                 <td><?php echo htmlspecialchars($produto['PRODUTO_QTD']); ?></td>
                 <td><img src="<?php echo htmlspecialchars($produto['IMAGEM_URL']); ?>" alt="<?php echo htmlspecialchars($produto['PRODUTO_NOME']); ?>" width="50"></td>
                 <td>
-                    <a href="editar_produto.php?id=<?php echo htmlspecialchars($produto['PRODUTO_ID']); ?>" class="action-btn">Editar</a>
-                    <a href="excluir_produto.php?id=<?php echo htmlspecialchars($produto['PRODUTO_ID']); ?>" class="action-btn delete-btn">Excluir</a>
+                    <div class="btn-container">
+                        <a class="btn btn-green" href="editar_produto.php?id=<?php echo htmlspecialchars($produto['PRODUTO_ID']); ?>" class="action-btn">Editar</a>
+                        <a class="btn btn-red" href="excluir_produto.php?id=<?php echo htmlspecialchars($produto['PRODUTO_ID']); ?>" class="action-btn delete-btn">Excluir</a>
+                    </div>
                 </td>
             </tr>
         <?php endforeach ?>
     </table>
-    <a href="painel_admin.php">Voltar ao painel do Administrador</a>
+    <div class="btn-container">
+        <a class="btn" href="painel_admin.php">Voltar ao painel do Administrador</a>
+    </div>
 </body>
 
 </html>

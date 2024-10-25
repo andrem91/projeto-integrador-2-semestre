@@ -16,6 +16,12 @@ a {
     text-decoration: none;
 }
 
+h2 {
+    color: white;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
 body {
     background-color: black;
     font-family: "Roboto", sans-serif;
@@ -26,7 +32,7 @@ body {
 /* Estilo básico para o formulário */
 form {
     max-width: 400px;
-    margin: 80px auto;
+    margin: 20px auto;
     padding: 20px;
     border-radius: 30px;
     background-color: white;
@@ -38,8 +44,7 @@ label {
     font-weight: bold;
 }
 
-input[type="text"],
-input[type="password"] {
+input, textarea, select {
     width: 90%;
     padding: 8px;
     border: 1px solid #ccc;
@@ -72,8 +77,25 @@ input[type="password"] {
     color: white;
 }
 
+.btn-red {
+    background-color: rgb(189, 56, 56);
+}
+
+.btn-red:hover {
+    background-color: rgb(196, 23, 23);
+}
+
+
+.btn-green {
+    background-color: rgb(35, 204, 78);
+}
+
+.btn-green:hover {
+    background-color: rgb(19, 143, 50);
+}
+
 .btn-container {
-    margin-bottom: 20px;
+    margin: 20px;
 }
 
 #img-logo {
@@ -85,4 +107,14 @@ input[type="password"] {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+table, th, td {
+    color: white;
+    border-collapse: collapse;
+    border: 1px solid white;
+}
+
+th, td {
+    padding: 8px;
 }

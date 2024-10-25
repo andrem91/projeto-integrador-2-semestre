@@ -58,29 +58,47 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Editar Produto</title>
+    <link rel="stylesheet" href="style/index.css">
 </head>
 
 <body>
 
-    <h2> Editar Produto </h2>
-    <form action="editar_produto.php" method="post">
-        <input type="hidden" name="id" value="<?php echo $produto['PRODUTO_ID']; ?>">
+    <div class="container">
+        <h2> Editar Produto </h2>
+        <form action="editar_produto.php" method="post">
+            <input type="hidden" name="id" value="<?php echo $produto['PRODUTO_ID']; ?>">
 
-        <label for="nome">Nome:</label>
-        <input type="text" name="nome" value="<?php echo $produto['PRODUTO_NOME'] ?>"> <br>
+            <div class="form-control">
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" value="<?php echo $produto['PRODUTO_NOME'] ?>">
+            </div>
 
-        <label for="descricao">Descrição</label>
-        <textarea name="descricao" id="descricao"> <?php echo $produto['PRODUTO_DESC']; ?> </textarea> <br>
+            <div class="form-control">
+                <label for="descricao">Descrição</label>
+                <textarea name="descricao" id="descricao"> <?php echo $produto['PRODUTO_DESC']; ?> </textarea>
+            </div>
 
-        <label for="preco">Preço</label>
-        <input type="text" name="preco" id="preco" value="<?php echo $produto['PRODUTO_PRECO']; ?>"> <br>
+            <div class="form-control">
+                <label for="preco">Preço</label>
+                <input type="text" name="preco" id="preco" value="<?php echo $produto['PRODUTO_PRECO']; ?>">
+            </div>
 
-        <label for="imagem_url">URL da Imagem</label> <br>
+            <div class="form-control">
+                <label for="imagem_url">URL da Imagem</label>
+                <input type="text" name="imagem_url" id="imagem_url" value="">
 
-        <input type="submit" value="Atualizar Produto">
-    </form>
-    <a href="listar_produtos.php">Voltar a lista de Produtos</a>
+            </div>
+
+            <div class="btn-container center">
+                <input class="btn" type="submit" value="Atualizar Produto">
+            </div>
+        </form>
+        <div class="btn-container">
+            <a class="btn" href="listar_produtos.php">Voltar a lista de Produtos</a>
+        </div>
+    </div>
+
+
 </body>
 
 </html>
-
