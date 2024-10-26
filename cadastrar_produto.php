@@ -133,8 +133,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             </div>
             <div id="containerImagens">
                 <div class="imagem-input">
-                    <input type="text" name="imagem_url[]" placeholder="URL da imagem" required>
-                    <input type="number" name="imagem_ordem[]" placeholder="Ordem" min="1" required>
+                    <input type="text" name="imagem_url[]" placeholder="URL da imagem">
+                    <input type="number" name="imagem_ordem[]" placeholder="Ordem" min="1">
                 </div>
             </div>
             <div class="btn-container center">

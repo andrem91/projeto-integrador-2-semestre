@@ -20,6 +20,10 @@ try {
     $stmt_imagem->bindParam(':id', $id, PDO::PARAM_INT);
     $stmt_imagem->execute();
 
+    $stmt_estoque = $pdo->prepare("DELETE FROM PRODUTO_ESTOQUE WHERE PRODUTO_ID = :id");
+    $stmt_estoque->bindParam(':id', $id, PDO::PARAM_INT);
+    $stmt_estoque->execute();
+
     // Excluir o produto
     $stmt = $pdo->prepare("DELETE FROM PRODUTO WHERE PRODUTO_ID = :id");
     $stmt->bindParam(':id', $id, PDO::PARAM_INT);

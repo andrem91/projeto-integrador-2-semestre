@@ -37,13 +37,7 @@ if (isset($_SESSION['mensagem_erro'])) {
                     <a class="btn" href="cadastrar_administrador.php">Cadastrar Administrador</a>
                 </div>
                 <div class = "btn-container center">
-                    <a class="btn" href="">Editar Administrador</a>
-                </div>
-                <div class = "btn-container center">
-                    <a class="btn" href="">Listar Administrador</a>
-                </div>
-                <div class = "btn-container center">
-                    <a class="btn" href="">Deletar Administrador</a>
+                    <a class="btn" href="listar_admin.php">Listar Administrador</a>
                 </div>
            
         </div>
